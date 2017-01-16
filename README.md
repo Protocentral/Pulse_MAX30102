@@ -1,16 +1,20 @@
 Pulse
 ================================
 
-[![Oximeter](https://www.protocentral.com/3927-large_default/protocentral-pulse-oximeter-heart-rate-sensor-based-on-max30100.jpg)  
-*ProtoCentral Pulse Oximeter & Heart Rate Sensor based on MAX30100 (PC-6565)*](https://www.protocentral.com/sensors/1030-protocentral-pulse-oximeter-heart-rate-sensor-based-on-max30100.html)
+[![Oximeter](https://www.protocentral.com/4203-thickbox_default/pulse-plus-pulse-ox-heart-rate-sensor-based-on-max30102.jpg)  
+*ProtoCentral Pulse Oximeter & Heart Rate Sensor based on MAX30100 ( PC-MED-0402)*](https://www.protocentral.com/sensors/1081-pulse-plus-pulse-ox-heart-rate-sensor-based-on-max30102.html?search_query=max30102&results=2)
+
+This is the new Pulse Plus building on our earlier Pulse board by adding the new MAX30102 chip from Maxim that provides better performance.
 
 The Pulse sensor board from ProtoCentral is our new addition to our open medical hardware line-up. Maxim's MAX30100 is a great new product that combines everything required for a pulse oximeter (including the LEDs and Photodiode !!) on a single tiny chip.
+
 Measuring 14 mm wide and 40 mm long, this board is easily wearable on the finger to measure the pulse of blood. We even provide a Velcro strap to hold it.
 Important Note: This device is only meant to be used for Research purposes and is NOT to be used as a medical device. This product is not FDA, CE or FCC approved for consumer use. 
 
 Features:
 * Integrates a complete pulse oximeter including the optics. No need for a separate probe. 
 * Easy-to-use I2C interface to connect to any host microcontroller
+* 880 nm Infrared and 660 nm Red LEDs
 * Arduino library available
 * Calculates Spo2 values with provided code
 * Real-time display of PPG (Photoplethysmogram)
