@@ -59,8 +59,8 @@ int ecs_rx_state = 0;
 int CES_Pkt_Len;
 int CES_Pkt_Pos_Counter, CES_Pkt_Data_Counter1, CES_Pkt_Data_Counter2;
 int CES_Pkt_PktType;
-char DataRcvPacket1[] = new char[1000];
-char DataRcvPacket2[] = new char[1000];
+char DataRcvPacket1[] = new char[500];
+char DataRcvPacket2[] = new char[500];
 
 /************** ControlP5 Related Variables **********************/
 
@@ -263,8 +263,8 @@ void ecsProcessData(char rxch)
       {     
         int data1 = ecsParsePacket(DataRcvPacket1, DataRcvPacket1.length-1);
         int data2 = ecsParsePacket(DataRcvPacket2, DataRcvPacket2.length-1);
-        receivedVoltage_RED = data1 * (0.00000057220458984375) ;
-        receivedVoltage_IR = data2 * (0.00000057220458984375) ;
+        receivedVoltage_RED = data1 * (0.0057220458984375) ;
+        receivedVoltage_IR = data2 * (0.0057220458984375) ;
 
         time = time+0.1;
         xdata[arrayIndex] = time;

@@ -34,8 +34,8 @@ void MAX30100::readSensor(void){
   uint8_t temp[6] = {0};  // Temporary buffer for read values
   I2CreadBytes(MAX30100_ADDRESS, MAX30100_FIFO_DATA, &temp[0], 6);  // Read four times from the FIFO
   //temp[0] = 0x11; temp[1] = 0x22; temp[2] = 0x33; temp[4] = 0x44; temp[5] = 0x55;temp[6] = 0x66;
-  IR =  (((long)temp[0]&0x03)<<16) | (long)temp[1]<<8 | (long)temp[2];    // Combine values to get the actual number
-  RED = (((long)temp[3] & 0x03)<<16) |(long)temp[4]<<8 | (long)temp[5];   // Combine values to get the actual number
+  IR =  (long)((long)((long)temp[0]&0x03)<<16) | (long)temp[1]<<8 | (long)temp[2];    // Combine values to get the actual number
+  RED = (long)((long)((long)temp[3] & 0x03)<<16) |(long)temp[4]<<8 | (long)temp[5];   // Combine values to get the actual number
 }
 
 void MAX30100::shutdown(void){
@@ -68,12 +68,12 @@ void MAX30100::begin(pulseWidth pw, ledCurrent ir, sampleRate sr){
   I2CwriteByte(MAX30100_ADDRESS, MAX30100_FIFO_WR_PTR, 0x00); 
   I2CwriteByte(MAX30100_ADDRESS, MAX30100_OVRFLOW_CTR, 0x00); 
   I2CwriteByte(MAX30100_ADDRESS, MAX30100_FIFO_RD_PTR, 0x00); 
-  I2CwriteByte(MAX30100_ADDRESS, MAX30100_FIFO_CONFIG, 0x4f); 
+  I2CwriteByte(MAX30100_ADDRESS, MAX30100_FIFO_CONFIG, 0x00); 
   I2CwriteByte(MAX30100_ADDRESS, MAX30100_MODE_CONFIG, 0x03); 
-  I2CwriteByte(MAX30100_ADDRESS, MAX30100_SPO2_CONFIG, 0x27); 
+  I2CwriteByte(MAX30100_ADDRESS, MAX30100_SPO2_CONFIG, 0x07); 
   I2CwriteByte(MAX30100_ADDRESS, MAX30100_LED1_AMP , 0x24); 
   I2CwriteByte(MAX30100_ADDRESS, MAX30100_LED2_AMP, 0x24); 
-  I2CwriteByte(MAX30100_ADDRESS, MAX30100_PILOT, 0x7f); 
+//  I2CwriteByte(MAX30100_ADDRESS, MAX30100_PILOT, 0x7f); 
   
 }
 
