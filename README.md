@@ -1,9 +1,6 @@
 Pulse
 ================================
 
-[![Oximeter](https://www.protocentral.com/4203-thickbox_default/pulse-plus-pulse-ox-heart-rate-sensor-based-on-max30102.jpg)  
-*ProtoCentral Pulse Oximeter & Heart Rate Sensor based on MAX30100 ( PC-MED-0402)*](https://www.protocentral.com/sensors/1081-pulse-plus-pulse-ox-heart-rate-sensor-based-on-max30102.html?search_query=max30102&results=2)
-
 [Dont have it yet? Buy one here: Pulse+ Pulse-Ox & Heart Rate Sensor based on MAX30102 (PC-MED-0402)](https://protocentral.com/product/pulse-pulse-ox-heart-rate-sensor-based-on-max30102/)
 ![Pulse+ Pulse-Ox & Heart Rate Sensor](extras/4806.jpg)
 
