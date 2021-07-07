@@ -1,7 +1,7 @@
 Pulse
 ================================
 
-[Dont have it yet? Buy one here: Pulse+ Pulse-Ox & Heart Rate Sensor based on MAX30102 (PC-MED-0402)](https://protocentral.com/product/pulse-pulse-ox-heart-rate-sensor-based-on-max30102/)
+[Don't have it yet? Buy one here: Pulse+ Pulse-Ox & Heart Rate Sensor based on MAX30102 (PC-MED-0402)](https://protocentral.com/product/pulse-3-pulse-ox-heart-rate-sensor-based-on-max30102-qwiic-compatible/)
 ![Pulse+ Pulse-Ox & Heart Rate Sensor](https://i2.wp.com/protocentral.com/wp-content/uploads/2020/10/5863.jpg?fit=1437%2C966&ssl=1)
 
 This is the new Pulse Plus building on our earlier Pulse board by adding the new MAX30102 chip from Maxim that provides better performance.
